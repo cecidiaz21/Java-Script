@@ -92,9 +92,6 @@ while (contador <5) {
 //Actividad práctica: Calculadora
 //Crear una calculadora que sume, reste, multiplique y divida números ingresados por el usuario.
 /** Ejercicios:
-
-Escribe un bucle while que cuente de 10 a 1 en orden descendente.
-Crea una calculadora básica que permita sumar o restar según el operador ingresado.
 **/
 
 //1 - Escribe un programa que verifique si un número es positivo o negativo.
@@ -191,3 +188,69 @@ switch (calificacion) {
     }
 
 //9- Crea un bucle while que imprima los múltiplos de 3 entre 1 y 30.
+//while (condition) {
+
+
+//10- Escribe un bucle while que cuente de 10 a 1 en orden descendente.
+//11- Crea una calculadora básica que permita sumar o restar según el operador ingresado.   
+
+
+
+//Funciones
+
+//1-Declaración
+function saludar(){
+    console.log("Hola!");
+    }
+
+function saludarConNombre(nombre) {
+    console.log("Hola " + nombre + "!");
+}
+saludarConNombre("Ana");
+
+function saludarAFranco(){
+    return "Hola Franco!";
+}
+
+saludarAFranco(); //no muestra nada en consola
+console.log(saludarAFranco()); //muestra el valor retornado en consola
+
+function sumar(a, b){
+    return a + b;
+}
+console.log(sumar(5, 10)); //15
+
+function restar(a, b){
+    return a - b;
+}       
+console.log(restar(10, 5)); //5
+
+let resultadoSuma = sumar(20, 30); //50
+console.log("El resultado de la suma es: " + resultadoSuma);
+
+let resultadoResta = restar(50, 15);
+console.log("El resultado de la resta es: " + resultadoResta);
+
+//funcion Anónima
+
+const sumas = function(a, b){
+    return a + b;
+};
+console.log(sumas(3, 7)); //10
+
+const restas = function(a, b){
+    return a - b;
+}   
+let resultadoResta2 = restas(20, 8);
+console.log(resultadoResta2);
+
+const saludo = function(nombre){
+    return "Hola " + nombre + "!";  
+};
+console.log(saludo("Lucía")); //Hola Lucía!
+
+//Funciones Flecha
+
+const resta1 = (a, b) => a - b;
+console.log(resta1(15, 5)); //10
+
