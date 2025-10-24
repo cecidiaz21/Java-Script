@@ -187,14 +187,30 @@ switch (calificacion) {
         console.log("La suma de los números es: " + suma);
     }
 
-//9- Crea un bucle while que imprima los múltiplos de 3 entre 1 y 30.
-//while (condition) {
-
-
-//10- Escribe un bucle while que cuente de 10 a 1 en orden descendente.
-//11- Crea una calculadora básica que permita sumar o restar según el operador ingresado.   
-
-
+//9- Escribe un bucle while que cuente de 10 a 1 en orden descendente.
+let i = 10;
+while (i >= 1) {
+    console.log(i);
+    i--;
+}
+//10- Crea una calculadora básica que permita sumar o restar según el operador ingresado.   
+    alert("Ingrese dos números");
+    let n1 = parseFloat(prompt("Ingrese el primer número: "));
+    let n2 = parseFloat(prompt("Ingrese el segundo número: "));
+    let operación = parseFloat(prompt("Ingrese la operacion deseada: "));
+    if (operación === "+") {
+        let suma = n1 + n2;
+        console.log("La suma de los números es: " + suma);
+    } else if (operación === "-") {
+        let resta = n1 - n2;
+        console.log("La resta de los números es: " + resta);
+    } else if (operación === "*") {
+        let multiplicaion = n1 * n2;
+        console.log("La multiplicación de los números es: " + multiplicaion);
+    } else (operación === "/") 
+        let division = n1 / n2;
+        console.log("La división los números es: " + division);
+    ;
 
 //Funciones
 
